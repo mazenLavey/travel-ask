@@ -23,7 +23,10 @@ const CityReviews: React.FC = () => {
         spaceBetween: 20,
         slidesPerView: 2.7,
         modules: [Pagination],
-        pagination: { clickable: true },
+        pagination: {
+            el: '.reviews-custom-pagination',
+            clickable: true
+        },
         loop: true
     };
 
@@ -37,6 +40,7 @@ const CityReviews: React.FC = () => {
             </div>
             <div className={styles.cityReviews__controls}>
                 <button className={styles.cityReviews__allReviewsBtn}>Все отзывы</button>
+                <div className="reviews-custom-pagination"></div>
             </div>
         </section>
     )

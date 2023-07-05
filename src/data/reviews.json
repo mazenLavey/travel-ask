@@ -1,65 +1,247 @@
 [
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1657022148000,
         "comments": 5,
-        "likes": 5
+        "likes": 5,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Плюсы города: весь город одни плюсы! Минусы города: не видела. В наш марафон по Европе не вписалось 2 испанских города от усталости - решили остаток путешествия провести в Барселоне с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1675598148000,
         "comments": 1,
-        "likes": 5
+        "likes": 21,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1678017348000,
         "comments": 2,
-        "likes": 5
+        "likes": 7,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1683287748000,
         "comments": 0,
-        "likes": 5
+        "likes": 5,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1625378400000,
         "comments": 5,
-        "likes": 5
+        "likes": 5,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1625378400000,
         "comments": 5,
-        "likes": 5
+        "likes": 3,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     },
     {
         "authorname": "наталия полянская",
-        "authorImg": "./images/author-img.png",
+        "authorImg": "./images/client-avatar.png",
         "title": "БАРСЕЛОНА — О городе:",
         "text": "Барселона – моя третья большая любовь, после Вены и Крита. Это город, в который я каждый раз возвращаюсь с огромным удовольствием, всем рекомендую хоть раз там побывать и осмотреть",
         "creationDate": 1625378400000,
         "comments": 5,
-        "likes": 5
+        "likes": 1,
+        "images": [
+            {
+                "orignal": "./images/Barcelona01.jpg",
+                "small": "./images/Barcelona01-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona02.jpg",
+                "small": "./images/Barcelona02-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona03.jpg",
+                "small": "./images/Barcelona03-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona04.jpg",
+                "small": "./images/Barcelona04-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona05.jpg",
+                "small": "./images/Barcelona05-small.jpg"
+            },
+            {
+                "orignal": "./images/Barcelona06.jpg",
+                "small": "./images/Barcelona06-small.jpg"
+            }
+        ]
     }
 ]

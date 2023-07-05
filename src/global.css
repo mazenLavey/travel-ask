@@ -141,76 +141,59 @@ button {
   }
 }
 
-/* @media (min-width: 1200px) {
-  .container {
-      max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-      max-width: 1320px;
-  }
-} */
-
 /* end global */
 
 
-/* start swiper settings */
-.swiper {
-  overflow: unset !important;
-  overflow-x: hidden !important;
-  overflow-x: clip !important;
+/* start slider settings for reveiws */
+.reviews-custom-pagination {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  bottom: -57px !important;
-  left: unset !important;
-  right: 0 !important;
+.reviews-custom-pagination.swiper-pagination-horizontal {
   width: fit-content !important;
 }
 
-.swiper-pagination-bullet {
-  width: 4px !important;
-  height: 4px !important;
-  border-radius: 50% !important;
-  background: var(--font-semiBlack) !important;
-  opacity: 1 !important;
+.reviews-custom-pagination .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  background: var(--font-semiBlack);
+  opacity: 0.9;
+
 }
 
-.swiper-pagination-bullet-active {
-  width: 8px !important;
-  height: 8px !important;
-  background: var(--orange-0) !important;
+.reviews-custom-pagination .swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+  background: var(--orange-0);
 }
 
+/* end slider settings for reveiws */
 
-/* 
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: var(--yellow-main);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  z-index: 100;
+/* start slider settings for gallery */
+.swiper-slide>img {
+  width: 100%;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1.4rem;
-  color: #fff;
-  font-weight: 600;
-} */
+.gallery-custom-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
 
-/* end swiper settings */
+.gallery-custom-pagination .swiper-pagination-bullet {
+  background: var(--white);
+}
+
+.gallery-custom-pagination .swiper-pagination-bullet-active {
+  background: var(--orange-0);
+}
+
+/* end slider settings for gallery */
 
 /* start animation */
 .fadeIn-animation {
-  animation: fadeIn 2s 1 forwards;
+  animation: fadeIn 1s 1 forwards;
 }
 
 @keyframes fadeIn {

@@ -5,7 +5,7 @@
       "assets/*": [
         "assets/*"
       ],
-      "common/*": [
+      "components/*": [
         "components/*"
       ],
       "types/*": [
@@ -19,6 +19,9 @@
       ],
       "context/*": [
         "context/*"
+      ],
+      "common/*": [
+        "common/*"
       ]
     },
     "target": "es5",

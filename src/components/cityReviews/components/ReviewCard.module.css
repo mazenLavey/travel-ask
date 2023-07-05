@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    gap: 26px;
+    gap: 20px;
     min-width: 300px;
     height: 410px;
     background-color: var(--pink-0);
@@ -49,14 +49,48 @@
     overflow: hidden;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
-    max-height: 270px;
+    height: 177px;
 }
 
 .reviewCard__text::first-letter {
     text-transform: capitalize;
 }
 
-.reviewCard__gallery {}
+.reviewCard__gallery {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviewCard__imgs {
+    cursor: pointer;
+}
+
+.reviewCard__imgs>img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviewCard__imgs:nth-of-type(4) {
+    position: relative;
+}
+
+.reviewCard__imgs:nth-of-type(4)>img {
+    filter: brightness(0.5);
+}
+
+.reviewCard__imgs:nth-of-type(4)>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--font-white);
+    font-size: var(--font-500);
+    font-weight: 500;
+    font-family: var(--secondary-ff);
+}
 
 .reviewCard__interaction {
     display: flex;

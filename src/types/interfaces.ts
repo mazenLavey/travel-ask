@@ -1,5 +1,10 @@
 type RateType = 1 | 2 | 3 | 4 | 5;
 
+export type ImagesType = {
+    orignal: string,
+    small: string
+}
+
 export type ChatBoxType = "admin" | "client";
 
 export type MessagesType = {
@@ -16,7 +21,8 @@ export interface ReviewCardType {
     text: string,
     creationDate: number,
     comments: number,
-    likes: number
+    likes: number,
+    images: ImagesType[]
 }
 
 export interface ChatDataType {
