@@ -3,7 +3,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 26px;
-    width: 300px;
+    min-width: 300px;
     height: 410px;
     background-color: var(--pink-0);
     padding: 26px 20px;
@@ -45,6 +45,11 @@
 .reviewCard__text {
     font-family: var(--secondary-ff);
     line-height: 25px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    max-height: 270px;
 }
 
 .reviewCard__text::first-letter {
@@ -61,8 +66,6 @@
     font-size: var(--font-200);
     font-family: var(--secondary-ff);
 }
-
-.reviewCard__date {}
 
 .reviewCard__comments {
     position: relative;

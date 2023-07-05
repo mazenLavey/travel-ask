@@ -1,27 +1,39 @@
 import ReviewCard from "./components/ReviewCard";
 import styles from './CityReviews.module.css';
-import data from 'data/reviews.json';
+import reviewsData from 'data/reviews.json';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const CityReviews: React.FC = () => {
-    const elements = data.map((el, index) => {
-        return (
-            <ReviewCard
-                key={index}
-                authorname={el.authorname}
-                authorImg={el.authorImg}
-                text={el.text}
-                title={el.title}
-                creationDate={el.creationDate}
-                comments={el.comments}
-                likes={el.likes}
-            />
-        )
-    })
+    const getReviews = () => {
+        const elements = reviewsData.map((el, index) => {
+            return (
+                <SwiperSlide key={index}>
+                    <ReviewCard data={el} />
+                </SwiperSlide>
+            )
+        });
+        return elements;
+    }
+
+    const swiperParams = {
+        spaceBetween: 20,
+        slidesPerView: 2.7,
+        modules: [Pagination],
+        pagination: { clickable: true },
+        loop: true
+    };
+
     return (
         <section className={styles.cityReviews}>
             <h2 className={styles.cityReviews__title}>Отзывы о Барселоне</h2>
-            <div>
-                {elements}
+            <div className={styles.cityReviews__slider}>
+                <Swiper {...swiperParams}>
+                    {getReviews()}
+                </Swiper>
             </div>
             <div className={styles.cityReviews__controls}>
                 <button className={styles.cityReviews__allReviewsBtn}>Все отзывы</button>

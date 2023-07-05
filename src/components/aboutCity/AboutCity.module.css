@@ -12,7 +12,9 @@
     object-fit: contain;
 }
 
-.aboutCity__body {}
+.aboutCity__body {
+    padding: 20px 20px 20px 0;
+}
 
 .aboutCity__title {
     font-size: var(--font-700);
@@ -29,6 +31,11 @@
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    max-height: 360px;
 }
 
 .aboutCity__text::first-letter {

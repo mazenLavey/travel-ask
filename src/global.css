@@ -157,11 +157,39 @@ button {
 
 
 /* start swiper settings */
-/* .swiper {
-  overflow: visible;
-  cursor: move;
+.swiper {
+  overflow: unset !important;
+  overflow-x: hidden !important;
+  overflow-x: clip !important;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  bottom: -57px !important;
+  left: unset !important;
+  right: 0 !important;
+  width: fit-content !important;
+}
+
+.swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 50% !important;
+  background: var(--font-semiBlack) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 8px !important;
+  height: 8px !important;
+  background: var(--orange-0) !important;
+}
+
+
+/* 
 .swiper-button-next,
 .swiper-button-prev {
   background-color: var(--yellow-main);
