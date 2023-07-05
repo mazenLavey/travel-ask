@@ -2,16 +2,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 415px;
+    width: 100%;
     height: 698px;
     background-color: var(--white);
+}
+
+@media (min-width: 992px) {
+    .chatBox {
+        width: 415px;
+    }
 }
 
 .chatBox__header {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 26px;
+    gap: 10px;
+    padding: 10px;
     height: 98px;
     border-bottom: 1px solid var(--gray-0);
 }
@@ -46,7 +52,7 @@
 }
 
 .chatBox__body {
-    padding: 14px;
+    padding: 7px;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: var(--orange-0) transparent;
@@ -88,8 +94,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 26px 20px;
+    gap: 10px;
+    padding: 10px;
     height: 98px;
     border-top: 1px solid var(--gray-0);
 }
@@ -108,4 +114,21 @@
 
 .chatBox__sendBtn:hover {
     opacity: 0.5;
+}
+
+@media (min-width: 992px) {
+
+    .chatBox__header {
+        gap: 20px;
+        padding: 26px;
+    }
+
+    .chatBox__body {
+        padding: 14px;
+    }
+
+    .chatBox__footer {
+        gap: 20px;
+        padding: 26px 20px;
+    }
 }

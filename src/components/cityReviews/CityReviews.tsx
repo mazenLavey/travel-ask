@@ -1,13 +1,15 @@
 import ReviewCard from "./components/ReviewCard";
-import styles from './CityReviews.module.css';
 import reviewsData from 'data/reviews.json';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import useMedia from "hooks/useMedia";
+import styles from './CityReviews.module.css';
 
 const CityReviews: React.FC = () => {
+    const { isMobileScreen, isTabletScreen } = useMedia();
+
     const getReviews = () => {
         const elements = reviewsData.map((el, index) => {
             return (
@@ -21,7 +23,7 @@ const CityReviews: React.FC = () => {
 
     const swiperParams = {
         spaceBetween: 20,
-        slidesPerView: 2.7,
+        slidesPerView: isMobileScreen ? 1 : isTabletScreen ? 1.6 : 2.7,
         modules: [Pagination],
         pagination: {
             el: '.reviews-custom-pagination',

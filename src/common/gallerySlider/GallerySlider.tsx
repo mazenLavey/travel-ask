@@ -8,11 +8,13 @@ import { ImagesType } from 'types/interfaces';
 
 
 type Props = {
-    imgs: ImagesType[]
+    imgs: ImagesType[],
+    initialImg: number
 }
 
-const GallerySlider: React.FC<Props> = ({ imgs }) => {
+const GallerySlider: React.FC<Props> = ({ imgs, initialImg = 0 }) => {
     const swiperParams = {
+        initialSlide: initialImg,
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,

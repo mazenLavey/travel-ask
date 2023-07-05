@@ -3,7 +3,6 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 20px;
-    min-width: 300px;
     height: 410px;
     background-color: var(--pink-0);
     padding: 26px 20px;

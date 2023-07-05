@@ -52,16 +52,16 @@
   --font-700: 1.813rem;
 }
 
-/* @media (max-width: 575px) {
+@media (max-width: 575px) {
   :root {
     --font-200: 0.5rem;
     --font-300: 0.75rem;
-    --font-400: 0.9rem;
+    --font-400: 0.813rem;
+    --font-500: 0.938rem;
     --font-600: 1rem;
     --font-700: 1.5rem;
-    --font-xl: 2rem;
   }
-} */
+}
 
 *,
 *::after,

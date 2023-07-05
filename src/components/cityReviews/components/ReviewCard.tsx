@@ -14,10 +14,12 @@ type Props = {
 const ReviewCard: React.FC<Props> = ({ data }) => {
     const { on, onToggle } = useToggle(false);
     const [showPopup, setShowPopup] = useState<boolean>(false);
+    const [initialImg, setInitialImg] = useState<number>(0);
 
     const timeAgo = getMoment(data.creationDate);
 
-    const handlePopup = (): void => {
+    const handlePopup = (targetedImg: number = 0): void => {
+        setInitialImg(targetedImg);
         setShowPopup(prev => !prev)
     }
 
@@ -27,14 +29,14 @@ const ReviewCard: React.FC<Props> = ({ data }) => {
         const galleryElements = imgToRender?.map((el, index) => {
             if (index === 3) {
                 return (
-                    <div key={index} className={styles.reviewCard__imgs} onClick={handlePopup}>
+                    <div key={index} className={styles.reviewCard__imgs} onClick={() => handlePopup(index)}>
                         <img src={el.small} alt={data.title} />
                         <span>+{imgCount}</span>
                     </div>
                 )
             } else {
                 return (
-                    <div key={index} className={styles.reviewCard__imgs} onClick={handlePopup}>
+                    <div key={index} className={styles.reviewCard__imgs} onClick={() => handlePopup(index)}>
                         <img src={el.small} alt={data.title} />
                     </div>
                 )
@@ -72,7 +74,7 @@ const ReviewCard: React.FC<Props> = ({ data }) => {
             </div>
             {showPopup ?
                 <Popup closePopup={handlePopup}>
-                    <GallerySlider imgs={data.images} />
+                    <GallerySlider imgs={data.images} initialImg={initialImg} />
                 </Popup>
                 :
                 null
