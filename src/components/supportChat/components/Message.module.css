@@ -1,0 +1,37 @@
+.message {
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+}
+
+.message_colored {
+    background-color: var(--pink-0);
+}
+
+.message__img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.message__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message__text {
+    line-height: 24px;
+}
+
+.message__time {
+    font-size: var(--font-200);
+    color: var(--font-gray);
+    font-family: var(--secondary-ff);
+}
+
+.message__time::first-letter {
+    text-transform: capitalize;
+}

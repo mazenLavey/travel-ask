@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+import AboutCity from "components/aboutCity/AboutCity";
+import CityReviews from "components/cityReviews/CityReviews";
+import barcelonaImg from 'assets/images/barcelona.png';
+import SupportChat from "components/supportChat/SupportChat";
+import { ChatProvider } from "context/ChatContext";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container">
+      <AboutCity
+        imgSrc={barcelonaImg}
+        imgAlt="barselona"
+        title="барселона — обзор города"
+        linkToArticle="#"
+      >
+        барселона с её золотистыми пляжами, архитектурными шедеврами Гауди, многочисленными фестивалями и гастрономическим разнообразием понравилась мне в первый же день пребывания и стала местом, в котором...
+      </AboutCity>
+
+      <CityReviews />
+
+      <ChatProvider>
+        <SupportChat />
+      </ChatProvider>
+    </main>
   );
 }
 

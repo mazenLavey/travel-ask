@@ -1,0 +1,63 @@
+.aboutCity {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 440px;
+    background-color: var(--white);
+}
+
+.aboutCity__img {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.aboutCity__body {}
+
+.aboutCity__title {
+    font-size: var(--font-700);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.aboutCity__title::first-letter {
+    text-transform: capitalize;
+}
+
+.aboutCity__text {
+    font-size: var(--font-500);
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.aboutCity__text::first-letter {
+    text-transform: capitalize;
+}
+
+.aboutCity__link {
+    font-size: var(--font-500);
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.aboutCity__link::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--orange-0);
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.aboutCity__link:hover {
+    color: var(--font-white);
+}
+
+.aboutCity__link:hover::before {
+    height: calc(100% + 5px);
+}

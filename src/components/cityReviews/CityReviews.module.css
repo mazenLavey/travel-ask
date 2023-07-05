@@ -1,0 +1,36 @@
+.cityReviews {
+    padding: 33px 31px;
+    background-color: var(--white);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cityReviews__title {
+    font-size: var(--font-700);
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.cityReviews__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+
+.cityReviews__allReviewsBtn {
+    width: 124px;
+    height: 40px;
+    outline: 2px solid var(--orange-0);
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+.cityReviews__allReviewsBtn:hover {
+    background-color: var(--orange-0);
+    color: var(--font-white);
+}
+
+.cityReviews__allReviewsBtn:active {
+    scale: 0.98;
+}

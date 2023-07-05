@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper>div:first-of-type {
+    border-right: 1px solid var(--gray-0);
+    padding-right: 46px;
+}
+
+.wrapper h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: var(--font-700);
+}
